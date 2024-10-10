@@ -1,0 +1,67 @@
+@import '../../../../styles/base.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px 60px;
+    background: #fff;
+
+    .left__side {
+        display: flex;
+        gap: 20px;
+
+        h2 {
+            margin: 12px;
+        }
+
+        .logo {
+            width: 60px;
+        }
+    }
+
+
+    .menu {
+        color: #0b55a5;
+        display: flex;
+        gap: 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+
+        p {
+            &:hover {
+                color: $hover-blue;
+            }
+        }
+
+        .auth__name {
+            color: #722F37;
+            font-size: 0.8em;
+            margin-top: 3px;
+
+            &:hover {
+                color: $hover-blue#b11226;
+            }
+        }
+
+        .login {
+            color: #444;
+        }
+    }
+}
+
+.logout {
+    background: #fff;
+    padding: 5px 5px;
+    width: 100px;
+    height: 42px;
+    position: absolute;
+    right: 58px;
+    top: 63px;
+    border-radius: 0.2em;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 1px 4px 5px 1px #888888;
+    cursor: pointer;
+    z-index: 10000;
+}

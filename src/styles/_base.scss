@@ -1,0 +1,22 @@
+$design-blue: #1d2577;
+$isw-blue: #00425F;
+$hover-blue: #007bff;
+$custom-grey: #8f9dac;
+$custom-grey-black: #252b33;
+
+i.inverted.bordered.grey.icon, i.inverted.circular.grey.icon {
+    background-color: $custom-grey!important;
+}
+
+i.teal.icon {
+    color: $isw-blue!important;
+}
+
+.navyblue {
+    color: #fff!important;
+    background-color: #546d89!important;
+}
+
+.ui.checkbox label {
+    color: $isw-blue!important;
+}

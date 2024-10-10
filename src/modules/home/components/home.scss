@@ -1,0 +1,26 @@
+@import '../../../styles/base.scss'; 
+
+body {
+    background: #f6f7f8;
+}
+
+.transport-aids {
+    background: #EBF8FE;
+    padding: 15px 70px;
+    display: flex;
+
+    &__menu {
+        width: 100px;
+        color: $isw-blue;
+        cursor: pointer;
+
+        &.inactive {
+            opacity: 0.3;
+        }
+    }
+
+    &__hfb {
+        font-size: 1.25em;
+        padding-top: 10px;
+    }
+}

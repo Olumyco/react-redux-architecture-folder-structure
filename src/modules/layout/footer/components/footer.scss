@@ -1,0 +1,77 @@
+@import '../../../../styles/base.scss';
+
+.footer {
+    padding: 30px 80px;
+
+    &__addons {
+        display: grid;
+        grid-template-columns: 40% 50% 10%;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ddd;
+
+        & p {
+            color: $custom-grey-black;
+        }
+
+        &__cards {
+            display: grid;
+            grid-auto-flow: column;
+            width: 40%;
+        }
+    }
+
+    &__menu {
+        text-align: center;
+        
+        &__list {
+            display: grid;
+            grid-auto-flow: column;
+            width: 45%;
+            margin-left: 26%;
+            padding: 29px 0 10px 0;
+
+            & p {
+                color: $custom-grey-black;
+                cursor: pointer;
+
+                &:hover {
+                    color: #007bff;
+                }
+            }
+
+        }
+
+        &__claim {
+            color: #67727c;
+        }
+    }
+
+    &__social-media-icons {
+        background: #d4d4d4;
+        color: #fff;
+        padding: 7px 5px 8px 8px;
+        border-radius: 1.7em;
+        cursor: pointer;
+    }
+
+    &__facebook{
+        @extend .footer__social-media-icons;
+        &:hover {
+            background: #3b5889;
+        }
+    }
+    
+    &__twitter{
+        @extend .footer__social-media-icons;
+        &:hover {
+            background: #00acee;
+        }
+    }
+    
+    &__instagram{
+        @extend .footer__social-media-icons;
+        &:hover {
+            background: #3f729b;
+        }
+    }
+}

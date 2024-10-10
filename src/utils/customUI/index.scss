@@ -1,0 +1,24 @@
+.counter {
+    display: flex;
+
+    &__button {
+        background: #e7e9ed;
+        padding: 9px;
+        cursor: pointer;
+        display: inline-block;
+        color: #aaa;
+    }
+
+    &__minus {
+        @extend .counter__button;
+        border-top-left-radius: 0.2em;
+        border-bottom-left-radius: 0.2em;
+        border-right: 1px solid #fff;
+    }
+    
+    &__plus {
+        @extend .counter__button;
+        border-top-right-radius: 0.2em;
+        border-bottom-right-radius: 0.2em;
+    }
+}

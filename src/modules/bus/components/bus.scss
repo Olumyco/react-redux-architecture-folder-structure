@@ -1,0 +1,148 @@
+@use '../../../styles/base.scss' as *; 
+
+
+.react-datepicker-wrapper {
+    display: unset!important;
+}
+
+.calendar {
+    position: relative;
+    float: right;
+    z-index: 1000;
+    right: 5px;
+    bottom: 30px;
+    opacity: 0.5!important;
+}
+
+.bus- {
+    padding: 0 80px;
+
+    & .bus-form {
+        background: #fff;
+        display: flex;
+        padding: 30px 30px 0;
+
+        &__inputs {
+            width: 40%;
+
+            &__title {
+                font-size: 1.35em;
+                color: $isw-blue;
+            }
+        }
+
+        &__banner {
+            width: 100%;
+            padding-left: 20px;
+        }
+    }
+
+    & .bus-overview {
+        padding: 50px 0;
+    
+        &__heading {
+            text-align: center;
+            color: $isw-blue;
+        }
+    
+        &__title {
+            font-size: 2.4em;
+        }
+    
+        &__message {
+            font-size: 1.3em;
+        }
+    
+        &__info {
+            display: flex;
+            color: $isw-blue;
+            padding-top: 70px;
+    
+            &__a {
+                width: 30%;
+                display: flex;
+            }
+    
+            &__b {
+                width: 40%;
+                padding-left: 40px;
+                display: flex;
+            }
+    
+            &__c {
+                width: 30%;
+                padding-left: 30px;
+                display: flex;
+            }
+        }
+    }
+
+    & .bus-routes {
+        padding: 30px;
+        background: #fff;
+        border-radius: 0.4em;
+
+        &__title {
+            font-size: 1.5em;
+            text-align: center;
+            color: $isw-blue;
+            padding-bottom: 20px;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            &__route {
+                display: flex;
+            }
+
+            &__caption {
+                color: $isw-blue;
+                float: left;
+            }
+
+            &__padright {
+                padding-right: 20px;
+                padding-bottom: 50px;
+            }
+            
+            &__padleft {
+                padding-left: 20px;
+                padding-bottom: 50px;
+            }
+
+            &__button {
+                float: right;
+                margin-top: -10px;
+            }
+
+            &__hr {
+                position: relative;
+                top: 45px;
+                border: 0;
+                border-bottom: 1px solid #ddd;
+            }
+
+            & .pad-unset {
+                padding-bottom: unset;
+            }
+        }
+    }
+
+}
+
+.custom-white-button {
+    color: $isw-blue;
+    border: 1px solid $isw-blue;
+    padding: 10px 17px;
+    width: 100px;
+    border-radius: 0.3em;
+    cursor: pointer;
+
+    &:hover {
+        background: $isw-blue;
+        color: #fff;
+    }
+}
+

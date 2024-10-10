@@ -1,0 +1,19 @@
+@import '../../../styles/base.scss';
+
+.loader {
+    margin-top: 12%;
+}
+
+.iframe__layout {
+    position: fixed;
+    top: 78px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1000;
+    height: 89%;
+}

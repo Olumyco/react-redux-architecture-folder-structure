@@ -1,0 +1,10 @@
+@use './base.scss' as *;
+
+.heading-title-text {
+    color: $isw-blue!important;
+}
+
+.ui.menu .teal.active.item, .ui.teal.menu .active.item {
+    color: $isw-blue!important;
+    border-color: $isw-blue!important;
+}
